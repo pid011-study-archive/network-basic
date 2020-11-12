@@ -33,7 +33,7 @@ CompactNamespaces: false
 ConstructorInitializerAllOnOneLineOrOnePerLine: false
 Cpp11BracedListStyle: true
 FixNamespaceComments: true
-IncludeBlocks: Merge
+IncludeBlocks: Regroup
 IncludeCategories:
   - Regex: '^<.*'
     Priority: 1
