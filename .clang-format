@@ -6,16 +6,20 @@
 Language: Cpp
 
 AccessModifierOffset: -4
-AllowShortBlocksOnASingleLine: Empty
+AlignAfterOpenBracket: AlwaysBreak
+# AlignOperands: Align
+AllowAllParametersOfDeclarationOnNextLine: true
+# AllowShortBlocksOnASingleLine: Empty
 AllowShortCaseLabelsOnASingleLine: false
 # AllowShortEnumsOnASingleLine: false
 AllowShortFunctionsOnASingleLine: Empty
-AllowShortIfStatementsOnASingleLine: Never
+AllowShortIfStatementsOnASingleLine: true
 AllowShortLambdasOnASingleLine: Inline
-AllowShortLoopsOnASingleLine: false
+AllowShortLoopsOnASingleLine: true
 AlwaysBreakAfterReturnType: None
 AlwaysBreakBeforeMultilineStrings: true
 AlwaysBreakTemplateDeclarations: Yes
+ExperimentalAutoDetectBinPacking: true
 BinPackArguments: false
 BinPackParameters: false
 BreakBeforeBraces: Attach
@@ -24,12 +28,19 @@ BreakBeforeTernaryOperators: true
 BreakConstructorInitializers: BeforeColon
 BreakInheritanceList: BeforeColon
 BreakStringLiterals: false
-ColumnLimit: 0
-DeriveLineEnding: false
+ColumnLimit: 100
 CompactNamespaces: false
-Cpp11BracedListStyle: false
-FixNamespaceComments: false
+ConstructorInitializerAllOnOneLineOrOnePerLine: false
+Cpp11BracedListStyle: true
+FixNamespaceComments: true
 IncludeBlocks: Merge
+IncludeCategories:
+  - Regex: '^<.*'
+    Priority: 1
+  - Regex: '^<.*\.h>'
+    Priority: 2
+  - Regex: '.*'
+    Priority: 3
 IndentCaseLabels: false
 IndentWidth: 4
 IndentWrappedFunctionNames: true
@@ -44,7 +55,7 @@ SpaceAfterCStyleCast: false
 SpaceAfterLogicalNot: false
 SpaceAfterTemplateKeyword: false
 SpaceBeforeAssignmentOperators: true
-SpaceBeforeCpp11BracedList: true
+SpaceBeforeCpp11BracedList: false
 SpaceBeforeCtorInitializerColon: true
 SpaceBeforeInheritanceColon: true
 SpaceBeforeParens: ControlStatements
