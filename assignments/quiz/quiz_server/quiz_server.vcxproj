@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{082baeab-520a-4f69-8a1b-4cbd2747cd10}</ProjectGuid>
-    <RootNamespace>echoselectserv</RootNamespace>
+    <ProjectGuid>{0a4946f2-6f97-4413-b262-b4607a9d2f5f}</ProjectGuid>
+    <RootNamespace>quizserver</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -141,7 +141,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="echo_selectserv_win.c" />
+    <ClCompile Include="quiz_server.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
